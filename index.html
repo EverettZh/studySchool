@@ -29,12 +29,22 @@
         />
         <button id="deleteNoteBtn">Delete</button>
       </div>
+
+      <div class="editor-tools">
+        <button id="exportBtn">Download backup</button>
+        <label class="import-label">
+          Import backup
+          <input type="file" id="importInput" accept="application/json" hidden />
+        </label>
+      </div>
+
       <textarea
         id="noteContent"
         placeholder="Write your notes here..."
       ></textarea>
       <div class="hint">
-        Changes are saved automatically in this browser.
+        Changes are saved automatically in this browser.  
+        Use backup to move notes between browsers/devices.
       </div>
     </section>
   </main>
