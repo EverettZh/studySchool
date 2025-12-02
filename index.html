@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Study Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>My Study Notes</h1>
+  </header>
+
+  <main class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Notes</h2>
+        <button id="newNoteBtn">+ New</button>
+      </div>
+      <ul id="notesList"></ul>
+    </aside>
+
+    <section class="editor">
+      <div class="editor-header">
+        <input
+          type="text"
+          id="noteTitle"
+          placeholder="Note title..."
+        />
+        <button id="deleteNoteBtn">Delete</button>
+      </div>
+      <textarea
+        id="noteContent"
+        placeholder="Write your notes here..."
+      ></textarea>
+      <div class="hint">
+        Changes are saved automatically in this browser.
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
